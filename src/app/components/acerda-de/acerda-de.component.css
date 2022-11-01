@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+div{
+    text-align: center;
+}
+
+.about-me{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil{
+    width: 125px;
+    height: 125px;
+
+    border-radius: 100px;
+    position: relative;
+    top: 50px
+}
+
+.container-me{
+    width: 80%;
+    padding: 50px 50px 20px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+}
+
+h1{
+    text-align: center;
+}

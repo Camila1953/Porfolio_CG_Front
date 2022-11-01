@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.skills .skills-title{
+    text-align: center;
+    padding: 24px;
+
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+
+    margin: 25px;
+}
+
+.skills .skill{
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+@media (max-width: 480px){
+    .skills{
+        margin-bottom: 80rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .skill{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills{
+        margin-bottom: 80rem;
+    }
+
+    .skill{
+        grid-template-columns: 1fr;
+    }
+
+    .skills .skills-title{
+        font-size: 35px;
+    }
+}
+
+.skill .set{
+    background-color: #101010;
+    padding: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.skill .set:hover{
+    box-shadow: 0px 12px 16px #36363624;
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    background-color: #8B69B3;
+    border-radius: 35%;
+    margin-inline: auto;
+}
+
+.set > h3{
+    padding-block: 24px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.set .list{
+    padding-block: 8px;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.set:hover .list{
+    color: #c7c7c7;
+}

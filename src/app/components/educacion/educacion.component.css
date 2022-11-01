@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+.educations{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.logo-education{
+    width: 40px;
+    height: 40px;
+}
+
+.educations-title{
+    margin: 25px;
+
+    text-align: center;
+    padding: 24px;
+
+    font-size: 55px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.education-date{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.education-institution{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.education-specialty{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.education{
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 950px) {
+    .educations-title{
+        font-size: 50px;
+        margin: 35px 0;
+    }
+    
+    .education-date{
+        font-size: 40px;
+    }
+    
+    .education-institution{
+        font-size: 25px;
+    }
+    
+    .education-specialty{
+        font-weight: 100;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .education{
+        padding: 0;
+    }
+    
+    .education_left{
+        text-align: right;
+    }
+
+    .educations-grid{
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap: 20px 70px;
+        padding: 70px;
+        justify-content: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .line{
+        background-color: #FFFFFF;
+        position: relative;
+    }
+
+    .line::before,
+    .line::after{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+
+        position: absolute;
+        top: -20px;
+        left: -9px;
+    }
+
+    .line::after{
+        top: 100%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 480px){
+    .educations{
+        padding: 1.5rem;
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .educations-title{
+        font-size: 35px;
+    }
+}

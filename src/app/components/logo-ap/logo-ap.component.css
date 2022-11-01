@@ -1,0 +1,33 @@
+#logoAP{
+    width: 150px;
+}
+
+.redes{
+    margin-right: 0.8em;
+}
+
+.social{
+    margin-right: 5px;
+}
+
+nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.social-icons{
+    color:#FFFFFF;
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+.btn{
+    margin-top: 5px;
+}
+
+
+img{
+    width: 30px;
+}
